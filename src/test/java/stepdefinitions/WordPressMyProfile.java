@@ -71,7 +71,7 @@ public class WordPressMyProfile {
     @Then("click save button")
     public void click_save_button() {
         wordpressLogIn.saveButton.click();
-        Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
     }
     @Then("verify that is successfully saved")
