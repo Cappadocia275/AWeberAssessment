@@ -114,8 +114,9 @@ public class WordPressMyProfile {
         wordpressLogIn.firstName.clear();
         wordpressLogIn.lastName.clear();
         wordpressLogIn.aboutMe.clear();
-        wordpressLogIn.saveButton.click();
         Driver.getDriver().manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        wordpressLogIn.saveButton.click();
+        Driver.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         wordpressLogIn.logOutButton.click();
         Driver.getDriver().quit();
 
